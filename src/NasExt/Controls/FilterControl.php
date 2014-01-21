@@ -171,7 +171,6 @@ class FilterControl extends Control
 		!$this->ajaxRequest ? : $elementPrototype->class[] = 'ajax';
 
 		$form->addSubmit('filter', 'Filter')
-			->setValidationScope(FALSE)
 			->onClick[] = callback($this, 'processSubmit');
 
 		$form->addSubmit('reset', 'Reset')
